@@ -1,5 +1,8 @@
-import { BaseRepository } from './baseRepositoryClass';
-export class BookingRepository extends BaseRepository {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.BookingRepository = void 0;
+const baseRepositoryClass_1 = require("./baseRepositoryClass");
+class BookingRepository extends baseRepositoryClass_1.BaseRepository {
     constructor() {
         super([
             { id: 'b1', userId: 'u1', courseId: 'c1', date: '2025-08-01' },
@@ -7,4 +10,5 @@ export class BookingRepository extends BaseRepository {
         ]);
     }
 }
+exports.BookingRepository = BookingRepository;
 //# sourceMappingURL=bookingData.js.map
